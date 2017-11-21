@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_20">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_top_bg"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_15">
+
+
+        <TextView
+            android:id="@+id/item_reports_tv_dealer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Dealer Name:  "
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textsize_14" />
+
+        <TextView
+            android:id="@+id/item_reports_tv_dealername"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:textColor="@color/text_color_profile_grey"
+            android:textSize="@dimen/textsize_14" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_300" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_bottom_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_15"
+            android:weightSum="5">
+
+            <TextView
+                android:id="@+id/item_reports_tv_blank"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textsize_12" />
+
+            <TextView
+                android:id="@+id/item_reports_tv_header_hups"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="HUPS"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textsize_12" />
+
+            <TextView
+                android:id="@+id/item_reports_tv_header_battery"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="BATTERY"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textsize_12" />
+
+            <TextView
+                android:id="@+id/item_reports_tv_header_hkw"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="HKW"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textsize_12" />
+
+            <TextView
+                android:id="@+id/item_reports_tv_header_total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="TOTAL"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textsize_12" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_300" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_15"
+            android:weightSum="5">
+
+            <TextView
+                android:id="@+id/item_reports_tv_rec"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="Cards Rec:"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textsize_12" />
+
+            <TextView
+                android:id="@+id/item_reports_tv_hups_rec"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:textColor="@color/text_color_profile_grey"
+                android:textSize="@dimen/textsize_12" />
+
+            <TextView
+                android:id="@+id/item_reports_tv_battery_rec"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:textColor="@color/text_color_profile_grey"
+                android:textSize="@dimen/textsize_12" />
+
+            <TextView
+                android:id="@+id/item_reports_tv_hkw_rec"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:textColor="@color/text_color_profile_grey"
+                android:textSize="@dimen/textsize_12" />
+
+            <TextView
+                android:id="@+id/item_reports_tv_total_rec"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:textColor="@color/text_color_profile_grey"
+                android:textSize="@dimen/textsize_12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_15"
+            android:weightSum="5">
+
+            <TextView
+                android:id="@+id/item_reports_tv_acc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="Cards Acc:"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textsize_12" />
+
+            <TextView
+                android:id="@+id/item_reports_tv_hups_acc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:textColor="@color/text_color_profile_grey"
+                android:textSize="@dimen/textsize_12" />
+
+            <TextView
+                android:id="@+id/item_reports_tv_battery_acc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:textColor="@color/text_color_profile_grey"
+                android:textSize="@dimen/textsize_12" />
+
+            <TextView
+                android:id="@+id/item_reports_tv_hkw_acc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:textColor="@color/text_color_profile_grey"
+                android:textSize="@dimen/textsize_12" />
+
+            <TextView
+                android:id="@+id/item_reports_tv_total_acc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:textColor="@color/text_color_profile_grey"
+                android:textSize="@dimen/textsize_12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_15"
+            android:weightSum="5">
+
+            <TextView
+                android:id="@+id/item_reports_tv_rej"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="Cards Rej:"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textsize_12" />
+
+            <TextView
+                android:id="@+id/item_reports_tv_hups_rej"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:textColor="@color/text_color_profile_grey"
+                android:textSize="@dimen/textsize_12" />
+
+            <TextView
+                android:id="@+id/item_reports_tv_battery_rej"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:textColor="@color/text_color_profile_grey"
+                android:textSize="@dimen/textsize_12" />
+
+            <TextView
+                android:id="@+id/item_reports_tv_hkw_rej"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:textColor="@color/text_color_profile_grey"
+                android:textSize="@dimen/textsize_12" />
+
+            <TextView
+                android:id="@+id/item_reports_tv_total_rej"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:textColor="@color/text_color_profile_grey"
+                android:textSize="@dimen/textsize_12" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_300" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/padding_15"
+            android:paddingRight="@dimen/padding_15"
+            android:paddingTop="@dimen/padding_15">
+
+            <TextView
+                android:id="@+id/item_reports_tv_dealer_payout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="Dealer Payout:"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textsize_12" />
+
+            <TextView
+                android:id="@+id/item_reports_tv_dealer_payout_amt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:textColor="@color/text_color_profile_grey"
+                android:textSize="@dimen/textsize_12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/padding_15"
+            android:paddingRight="@dimen/padding_15">
+
+            <TextView
+                android:id="@+id/item_reports_tv_dist_payout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="Distributer Payout:"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textsize_12" />
+
+            <TextView
+                android:id="@+id/item_reports_tv_dist_payout_amt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:textColor="@color/text_color_profile_grey"
+                android:textSize="@dimen/textsize_12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/padding_15"
+            android:paddingLeft="@dimen/padding_15"
+            android:paddingRight="@dimen/padding_15">
+
+            <TextView
+                android:id="@+id/item_reports_tv_total_payout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="Total Payout:"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textsize_12" />
+
+            <TextView
+                android:id="@+id/item_reports_tv_total_payout_amt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:textColor="@color/text_color_profile_grey"
+                android:textSize="@dimen/textsize_12" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

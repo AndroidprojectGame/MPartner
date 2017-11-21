@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MPartner</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_contact_us">Contact Us: </string>
+    <string name="text_profile">My Profile </string>
+    <string name="text_otp">You will receive a <b>One Time Password</b> through <b>SMS</b> on your phone. Please fill the Pin received and click on <b>Validate Button</b> to login:</string>
+
+    <string name="url_fb">https://www.facebook.com/myluminous</string>
+    <string name="url_twitter">https://twitter.com/myluminous</string>
+    <string name="url_blog">http://myluminous.blogspot.in/</string>
+    <string name="url_youtube">https://www.youtube.com/user/myluminousindia</string>
+    <string name="url_gplus">https://plus.google.com/+LuminousIndia/videos</string>
+    <string name="url_web">http://www.luminousindia.com</string>
+
+ <!--   <string name="gcm_defaultSenderId" translatable="false">233628028283</string> -->
+</resources>
+
+
+
+

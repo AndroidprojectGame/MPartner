@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#021d51"
+    android:id="@+id/product_category_container"
+    android:orientation="horizontal" >
+
+<ImageView
+    android:id="@+id/activity_dashboard_iv_contact"
+    android:layout_width="90dp"
+    android:layout_height="90dp"
+    android:onClick="openContactUsScreen"
+    android:padding="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:src="@drawable/call"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF" />  -->
+
+<HorizontalScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/product_category_container"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:gravity="center"
+    android:background="#021d51"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/lL1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/activity_dashboard_iv_product"
+        android:layout_width="55dp"
+        android:background="@drawable/roundcorner"
+        android:layout_height="55dp"
+        android:padding="2dp"
+        android:onClick="openProductBattery"
+        android:src="@drawable/battery" />
+
+        <TextView
+            android:id="@+id/activity_dashboard_tv_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="Battery"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lL2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/activity_dashboard_iv_product1"
+        android:layout_width="55dp"
+        android:background="@drawable/roundcorner"
+        android:layout_height="55dp"
+        android:onClick="openProductUPS"
+        android:layout_marginLeft="10dp"
+        android:padding="2dp"
+        android:src="@drawable/homeups" />
+
+        <TextView
+            android:id="@+id/activity_dashboard_tv_product1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="Home UPS"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lL3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:visibility="gone"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/activity_dashboard_iv_product2"
+            android:layout_width="55dp"
+            android:background="@drawable/roundcorner"
+            android:layout_height="55dp"
+            android:onClick="openProductFan"
+            android:layout_marginLeft="10dp"
+            android:padding="2dp"
+            android:src="@drawable/homeups" />
+
+        <TextView
+            android:id="@+id/activity_dashboard_tv_product2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="Home UPS"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lL4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/activity_dashboard_iv_product3"
+            android:layout_width="55dp"
+            android:background="@drawable/roundcorner"
+            android:layout_height="55dp"
+            android:onClick="openProductFan"
+            android:layout_marginLeft="10dp"
+            android:padding="2dp"
+            android:src="@drawable/homeups" />
+
+        <TextView
+            android:id="@+id/activity_dashboard_tv_product3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="Home UPS"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+ <!--   <TextView
+        android:id="@+id/activity_dashboard_tv_product4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="4dp"
+        android:drawableTop="@drawable/battery2"
+        android:gravity="left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="openProductBattery"
+        android:text=" "
+        android:textSize="0.5sp"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/activity_dashboard_tv_product1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="4dp"
+        android:drawableTop="@drawable/homeups1"
+        android:gravity="left"
+        android:layout_marginRight="10dp"
+        android:onClick="openProductUPS"
+        android:text=" "
+        android:textSize="0.5sp"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/activity_dashboard_tv_product2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="4dp"
+        android:drawableTop="@drawable/battery2"
+        android:gravity="left"
+        android:layout_marginRight="10dp"
+        android:onClick="openProductFan"
+        android:text=" "
+        android:visibility="gone"
+        android:textSize="0.5sp"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/activity_dashboard_tv_product3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="4dp"
+        android:drawableTop="@drawable/battery2"
+        android:gravity="left"
+        android:onClick="openProductCategory"
+        android:text=" "
+        android:visibility="gone"
+        android:textSize="0.5sp"
+        android:textColor="@android:color/white"
+        />    -->
+
+</LinearLayout>
+    </HorizontalScrollView>
+

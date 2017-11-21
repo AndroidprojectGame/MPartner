@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_view_with_back" />
+
+    <TextView
+        android:id="@+id/activity_notifications_tv_select_dates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color_profile_grey"
+        android:background="@drawable/inner_top"
+        android:text="Select Dates"
+        android:gravity="center_vertical"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/icon_calendar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_300" />
+
+    <com.luminous.mpartner.ui.custom.swipelistview.SwipeMenuListView
+        android:id="@+id/activity_notifications_lv_notifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

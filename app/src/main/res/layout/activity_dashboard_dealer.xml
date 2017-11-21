@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_view_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:padding="10dp">
+
+        <View
+            android:id="@+id/activity_dashboard_v_center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/activity_dashboard_v_center"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@id/activity_dashboard_v_center"
+            android:background="@android:color/transparent"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/icon_punch"
+            android:gravity="center"
+            android:onClick="navigateToDealersList"
+            android:text="Punch Secondary"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/activity_dashboard_v_center"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/activity_dashboard_v_center"
+            android:background="@android:color/transparent"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/icon_draft"
+            android:gravity="center"
+            android:onClick="navigateToSavedDrafts"
+            android:text="Saved Drafts"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>

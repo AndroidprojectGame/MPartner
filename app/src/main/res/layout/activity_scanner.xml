@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    tools:context=".ScannerActivity">
+
+    <me.dm7.barcodescanner.zbar.ZBarScannerView
+        android:id="@+id/activity_scanner_scannerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/activity_scanner_bt_scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/apptheme_btn_default_holo_light"
+        android:text="Scan Serial No."
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/activity_scanner_bt_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="8dp"
+        android:background="@drawable/apptheme_btn_default_holo_light"
+        android:onClick="returnBackResult"
+        android:text="Done"
+        android:textColor="@android:color/white" />
+
+    <ToggleButton
+        android:id="@+id/activity_scanner_bt_flash_toggle"
+        style="@style/ToggleAppTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/activity_scanner_bt_done"
+        android:layout_alignBottom="@+id/activity_scanner_bt_done"
+        android:layout_toLeftOf="@+id/activity_scanner_bt_done"
+        android:textOff="On"
+        android:textOn="Off" />
+
+    <ImageView
+        android:id="@+id/activity_scanner_iv_flash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/activity_scanner_bt_flash_toggle"
+        android:layout_alignTop="@+id/activity_scanner_bt_flash_toggle"
+        android:layout_toLeftOf="@+id/activity_scanner_bt_flash_toggle"
+        android:src="@drawable/ic_flash" />
+
+    <TextView
+        android:id="@+id/activity_scanner_tv_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/activity_scanner_bt_done"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/activity_scanner_bt_done"
+        android:layout_margin="8dp"
+        android:layout_toLeftOf="@+id/activity_scanner_iv_flash"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/activity_scanner_bt_done"
+        android:background="@android:color/white" />
+
+    <TextView
+        android:id="@+id/activity_scanner_tv_scan_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_scanner_tv_quantity"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

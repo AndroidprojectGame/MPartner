@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_view_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <TextView
+            android:id="@+id/activity_summary_tv_dealer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/application_bg"
+            android:padding="8dp"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/activity_summary_bt_scan"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/apptheme_btn_default_holo_light"
+                android:drawableLeft="@drawable/icon_active_qrcode"
+                android:onClick="openScanner"
+                android:text="Scan Serial"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/activity_summary_bt_manual"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/apptheme_btn_default_holo_light"
+                android:drawableLeft="@drawable/icon_edit"
+                android:onClick="toggleManual"
+                android:text="Add Manually"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_summary_ll_manual_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/activity_summary_et_manual"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Enter Serial No."
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="#888888"></EditText>
+
+            <Button
+                android:id="@+id/activity_summary_bt_manual_done"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/apptheme_btn_default_holo_light"
+                android:onClick="addSerialManually"
+                android:text="DONE"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/activity_summary_lv_serial"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/activity_summary_bt_submit"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/apptheme_btn_default_holo_light"
+                android:onClick="submitOrder"
+                android:text="Submit"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/activity_summary_bt_save_draft"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/apptheme_btn_default_holo_light"
+                android:onClick="saveDraft"
+                android:text="Save Draft"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/activity_summary_bt_delete_draft"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/apptheme_btn_default_holo_light"
+                android:onClick="deleteDraft"
+                android:text="Delete Draft"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

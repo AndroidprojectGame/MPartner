@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg">
+
+    <include
+        layout="@layout/toolbar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <!--<include
+        layout="@layout/product_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1" /> -->
+        <!--Commented by Anusha -->
+  <!--  <include
+        layout="@layout/common_top_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar" />
+
+android:text="Notification"
+
+    <include
+        layout="@layout/common_bottom_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />-->
+
+    <!--Inserted by Anusha -->
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_below="@+id/toolbar"
+        >
+
+    <EditText
+        android:id="@+id/activity_dashboard_et_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@drawable/search_bg"
+        android:drawableLeft="@drawable/search_icon"
+        android:drawablePadding="10dp"
+        android:hint="Search"
+        android:layout_weight="0.9"
+        android:paddingLeft="5dp"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/text_color_profile_grey" />
+       <!-- android:layout_below="@+id/common_top_header_container"-->
+
+        <RelativeLayout
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="0.1">
+
+  <ImageView
+       android:id="@+id/activity_dashboard_iv_notification"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:paddingTop="2dp"
+       android:src="@drawable/noti"
+       android:gravity="center"
+       android:layout_gravity="right"
+       android:onClick="openNotifications" />
+
+        <TextView
+            android:id="@+id/activity_dashboard_tv_notification_count_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/bg_circle_red"
+            android:gravity="center"
+            android:padding="4dp"
+            android:textColor="@android:color/white"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+       </RelativeLayout>
+
+    </LinearLayout>
+    <!--End of Insertion -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_below="@+id/linearLayout1">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <ImageView
+        android:id="@+id/activity_dashboard_iv_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:adjustViewBounds="true"
+        android:visibility="gone"  />
+
+        <ImageView
+            android:id="@+id/activity_dashboard_iv_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"
+            android:onClick="openProduct1"
+            android:src="@drawable/battery" />
+
+        <ImageView
+            android:id="@+id/activity_dashboard_iv_product1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openProduct2"
+            android:layout_marginBottom="5dp"
+            android:padding="2dp"
+            android:visibility="gone"
+            android:src="@drawable/homeups" />
+
+        <ImageView
+            android:id="@+id/activity_dashboard_iv_product2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openProduct3"
+            android:padding="2dp"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"
+            android:src="@drawable/homeups" />
+
+        <ImageView
+            android:id="@+id/activity_dashboard_iv_product3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openProduct4"
+            android:layout_marginBottom="5dp"
+            android:padding="2dp"
+            android:visibility="gone"
+            android:src="@drawable/homeups" />
+
+        <TextView
+            android:id="@+id/activity_dashboard_tv_promotion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/promotion"
+            android:gravity="center"
+            android:visibility="visible"
+            android:onClick="openProductPromotion"
+            android:text=" "
+            android:textSize="5dp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/activity_dashboard_tv_wrs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="5dp"
+            android:drawableTop="@drawable/wrs"
+            android:gravity="center"
+            android:text=" "
+            android:onClick="openWRS"
+            android:textColor="@android:color/white" />  -->
+
+        <TextView
+            android:id="@+id/activity_dashboard_tv_bb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/b2b"
+            android:gravity="center"
+            android:textSize="5dp"
+            android:text=" "
+            android:onClick="openBB"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/activity_dashboard_iv_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openContactUsScreen"
+            android:src="@drawable/contact_us"/>
+
+   <!-- <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_dashboard_iv_banner"
+        android:layout_above="@+id/activity_dashboard_iv_contact" >
+
+
+        <View
+            android:id="@+id/activity_dashboard_v_center"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true" />
+
+
+        <TextView
+            android:id="@+id/activity_dashboard_tv_promotion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/activity_dashboard_v_center"
+            android:layout_toLeftOf="@+id/activity_dashboard_v_center"
+            android:drawableRight="@drawable/icon_promotion_big"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:onClick="openProductPromotion"
+            android:text="Promotion"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/activity_dashboard_tv_wrs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/activity_dashboard_v_center"
+            android:layout_toRightOf="@+id/activity_dashboard_v_center"
+            android:drawablePadding="4dp"
+            android:drawableLeft="@drawable/icon_wrs_big"
+            android:gravity="center"
+            android:text="WRS"
+            android:onClick="openWRS"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/activity_dashboard_tv_bb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_dashboard_v_center"
+            android:layout_toLeftOf="@+id/activity_dashboard_v_center"
+            android:drawableRight="@drawable/icon_bb_big"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:text="B2B"
+            android:onClick="openBB"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout> -->
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

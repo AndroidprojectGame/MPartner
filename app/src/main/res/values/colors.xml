@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#071031</color>
+    <color name="colorPrimaryDark">#071031</color>
+    <!--<color name="colorAccent">#FFFFFF</color>-->
+    <color name="colorAccent">#062F83</color>
+    <color name="semitransparent">#96000000</color>
+    <color name="screen_background">#f6f7f8</color>
+    <color name="text_color_profile_grey">#7b7b7c</color>
+    <color name="text_color_entry">#5B5C5C</color>
+
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_400">#BDBDBD</color>
+    <color name="grey_500">#9E9E9E</color>
+    <color name="grey_200">#EEEEEE</color>
+
+    <color name="header_color">#183883</color>
+    <color name="bottom_line_color">#192C65</color>
+    <color name="login_button_bg">#10529F</color>
+    <color name="text_color_blue">#011554</color>
+</resources>

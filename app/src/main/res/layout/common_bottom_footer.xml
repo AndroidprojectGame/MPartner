@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@color/semitransparent"
+    android:id="@+id/common_bottom_footer_container"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+ <!--   <ImageView
+        android:id="@+id/common_bottom_footer_iv_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:onClick="openContactUsScreen"
+        android:src="@drawable/icon_contact_us"/> -->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:onClick="openFb"
+        android:src="@drawable/icon_fb" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:onClick="openTwitter"
+        android:src="@drawable/icon_twitter" />
+
+   <!-- <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:onClick="openBlog"
+        android:src="@drawable/icon_blogger" />-->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:onClick="openYoutube"
+        android:src="@drawable/icon_youtube" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:onClick="openWebpage"
+        android:src="@drawable/icon_web" />
+
+    <!--<ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:onClick="openGPlus"
+        android:src="@drawable/icon_gplus" />-->
+</LinearLayout>
